@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: pink;
+    display: grid;
+    grid-template-columns:5% 90% 5%;
+    grid-template-rows: 4% 4% 2% 18% 4% 25% 4% 27% 10%;
+    grid-template-areas:
+    ". cont_1 ." /*encabezado*/
+    ". cont_2 ."/*slider*/
+    ". cont_3 ."/*buscador*/
+    ". cont_4 ."/*imagen descuentos*/
+    ". cont_5 ." /*titulo novedades*/
+    ". cont_6 ."/*catalogo de productos*/
+    ". cont_7 ."/*titulo de servicios*/
+    ". cont_8 ."/*imagenes de servicios*/
+    ". cont_9 ."/*footer*/
+    ;
+}
+
+.cont_1{
+    grid-area: cont_1;
+    width: 100%;
+    height: 15%;
+    background-color:blueviolet;
+    position:fixed;
+}
+
+.cont_2{
+    grid-area: cont_2;
+    width: 100%;
+    height: 40px;
+}
+
+.cont_3{
+    grid-area: cont_3;
+}
+
+.cont_4{
+    grid-area: cont_4;
+    width: 100%;
+    height: 450px;
+    margin-top: 3%;
+}
+
+.cont_5{
+    grid-area: cont_5;
+    margin-top: 14%;
+    width: 100%;
+    height: 60px;
+}
+
+.cont_6{
+    grid-area: cont_6;
+    margin-top: 15%;
+    width: 100%;
+    height: 500px;
+}
+
+.cont_7{
+    grid-area: cont_7;
+    margin-top: 15%;
+    width: 100%;
+    height: 60px;
+}
+
+.cont_8{
+    grid-area: cont_8;
+    margin-top: 15%;
+    width: 100%;
+}
+
+.cont_9{
+    grid-area: cont_9;
+    width: 100%;
+}
+
+
+.slider li{
+    text-align: center;
+    font-size: 17.5px;
+    width: 100%;
+    list-style: none;
+}
+
+
